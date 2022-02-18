@@ -1,0 +1,116 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.card {
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    box-shadow: 5px 10px 10px 10px hsl(218, 58%, 6%),-5px 10px 10px 10px hsl(216, 52%, 12%);
+}
+.image {
+    position: relative;
+    border-radius: 20px;
+}
+.image .main-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    padding: 20px 20px 0 20px;
+}
+.image .view {
+    position: absolute;
+    z-index: -1;
+    margin: calc(50% - 26px);
+    transition-duration: 0.2s;
+}
+.image:hover .view  { 
+    z-index: 1 ;
+}
+.image .color-img {
+    z-index:-1;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    padding: 20px 20px 0 20px;
+    transition-duration: 0.3s;
+
+}
+.image:hover .color-img{
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.text {
+    font-family: "Work Sans" , sans-serif;
+    font-size:18px;
+    padding: 10px 20px 20px 20px;
+}
+.text .eq {
+    font-weight: 600;
+    color: white;
+    transition-duration: 0.3s;
+}
+.text .eq:hover {
+    color: #00FFF7;
+}
+.text .main-p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 0.8em;
+    padding: 10px 0;
+}
+.text .same-line{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 10px 0;
+}
+.text .eth {
+    font-style: bold;
+    color:hsl(178, 100%, 50%);
+}
+.text .days {
+    color:hsl(215, 51%, 70%);
+}
+.text .line {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.text .same-line .avtar {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.text .same-line .cr {
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+}
+.cr span {
+    color:white;
+}
+.cr span:hover {
+    color: hsl(178, 100%, 50%);
+}
+.attribution {
+    color:hsl(215, 51%, 70%); 
+    font-size: 16px; 
+    text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.attribution a:hover {
+    color: #00FFF7;
+
+}
